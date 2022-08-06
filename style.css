@@ -1,0 +1,374 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+body
+{
+    /*overflow: hidden;*/
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1
+{
+    font-size: 3rem;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+h2
+{
+    font-size: 2.25rem;
+    margin-bottom: 0.6em;
+    margin-top: 0.8em;
+    color: black;
+}
+
+::-webkit-scrollbar
+{
+    width: 6px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: rgba(2, 77, 32, 0.793);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(236, 255, 22);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(240, 246, 110);
+}
+
+nav
+{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    border-bottom: 3px solid rgb(238, 255, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.navwrap
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.navwrap .logo img
+{
+    width: 12.7em;
+}
+
+.links 
+{
+    overflow: hidden;
+}
+
+.hamburger .links
+{
+    background-color: rgb(0, 0, 0);
+    height: 0.9em;
+    width: 4.3em;
+}
+
+.hamburger .line
+{
+    background-color: rgb(255, 255, 255);
+    height: 1em;
+    width: 4.3em;
+    border: 0.2em solid rgb(0, 0, 0);
+}
+
+.hamburger:hover .links
+{
+    position: fixed;
+    background-color:rgb(236, 255, 22);
+    height: 100vh;
+    width: 60vw;
+    left: 40%;
+}
+
+.links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links ul
+{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.links ul li a
+{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+    color: rgb(0, 0, 0);
+    padding: 2em;
+}
+
+.links a:hover
+{
+    color: green;
+}
+
+#first
+{
+    background-color: rgb(51, 170, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container1
+{
+    margin-top: 4em;
+}
+
+@media (min-width: 1100px)
+{
+    .container1
+    {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 90%;
+    }
+    .herotext
+    {
+        width: 35vw;
+    }
+}
+
+.hero
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img
+{
+    width: 100%;
+    padding: 1em;
+}
+
+.herotext
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    padding: 1.2em;
+}
+
+.herotext h1
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.herotext h2
+{
+    color: yellow;
+}
+
+.yowa
+{
+    width: 100%;
+    padding: 1em;
+}
+
+#second
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectext
+{
+    margin-top: 5em;
+}
+
+#second .container2
+{
+    position: relative;
+    top: 4em;
+    margin-bottom: 8em;
+}
+
+@media (min-width: 900px)
+{
+#second .container2
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 90%;
+    position: relative;
+    top: 4em;
+}
+}
+
+#second .card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+    width: 22em;
+    height: 20em;
+    margin: 1em;
+    margin-bottom: 6em;
+    background-color: rgb(255, 255, 0);
+    box-shadow: 0.4em 0.5em 1em rgba(0, 0, 0, 0.664);
+    transition: 0.3s ease-in-out;
+}
+
+#second .card:hover
+{
+    height: 28em;
+}
+
+#second .card img
+{
+    height: 19em;
+    width: 19em;
+    position: relative;
+    top: -4em;
+    object-fit: cover;
+    border-radius: 0.6em;
+    box-shadow: 0.4em 0.5em 1em rgba(0, 0, 0, 0.664);
+    z-index: 2;
+}
+
+#second .card .cardtext
+{
+    position: relative;
+    margin-top: -13em;
+    padding: 1em;
+    visibility: hidden;
+    font-size: 1.08rem;
+}
+
+#second .card .cardtext h2
+{
+    color:rgb(20, 113, 15);
+}
+
+#second .card:hover .cardtext
+{
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+}
+
+
+#fourth
+{  
+    background-color: rgb(49, 120, 82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper4
+{
+    font-size: 1.6rem;
+    margin: 0.6em;
+    padding: 0.6em;
+}
+
+.wrapper4 div
+{
+    margin-bottom: 0.6em;
+    color: white;
+}
+
+
+
+ @media all and (min-width: 900px)
+ {
+    .wrapper4
+    {
+        color: black;
+        min-height: 100vh;;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 90%;
+        margin-top: 2em;
+    }
+ }
+
+ form
+ {
+    display: flex;
+    flex-direction: column;
+ }
+
+ form input, form textarea
+ {
+    border: 0;
+    margin: 0.5em;
+    padding: 0.8em;
+    outline: none;
+    background: rgb(255, 255, 255);
+    font-size: 1rem;
+ }
+
+ form button
+ {
+    padding: 1em;
+    margin: 1em;
+    font-size: 0.8rem;
+    background: rgb(0, 0, 0);
+    color: white;
+ }
+
+ form button:hover
+ {
+    background: rgb(242, 255, 0);
+    color: black;
+    cursor: pointer;
+ }
+
+ .sitemap, .socials
+ {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+ }
+
+ .sitemap a, .socials a
+ {
+    text-decoration: none;
+    color: white;
+ }
